@@ -11,5 +11,6 @@ class ImageConstants{
   static const String bottomText1Png = "assets/image/bottom_text1.png";  
   
   static const String bottomText2Png = "assets/image/bottom_text2.png";
+  static const String  girlImagePng ="assets/image/girl_image.png";
 
 }
