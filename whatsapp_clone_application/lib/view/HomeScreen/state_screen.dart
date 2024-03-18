@@ -16,8 +16,11 @@ class _StateScreenState extends State<StateScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 4,
       child: Scaffold(
+
+        // floating button
+
         floatingActionButton: Container(
           width: 70,
           height: 70,
@@ -32,31 +35,145 @@ class _StateScreenState extends State<StateScreen> {
               ),
           ),
         ),
+      // appbar design 
 
         appBar: AppBar(
-         title: Text(
-            "Whatsapp",
-            style: TextStyle(color: Colors.white),
-          ),
+          elevation: 0,
+         title: Padding(
+           padding: const EdgeInsets.only(top: 15),
+           child: Text(
+              "Whatsapp",
+              style: TextStyle(color: Colors.white,
+              fontSize: 20),
+            ),
+         ),
+       
+       // icons
 
-          actions: [
-            Icon(Icons.search, color: Colors.white),
+        actions: [
+          Padding(
+            padding: EdgeInsets.only(
+              top: 12,
+              right: 15
+              ),
 
-            SizedBox(
+              child: Icon( 
+                Icons.search, 
+                size: 28,
+                color: Colors.white
+                ),
+              ),
+           
+           SizedBox(
               width: 10,
             ),
 
-           
-            Icon(Icons.chat, color: Colors.white),
-            SizedBox(
-              width: 10,
+            Padding(
+            padding: EdgeInsets.only(
+              top: 12,
+              right: 15
+              ),
+
+            child:Icon(
+            Icons.chat,
+            size: 25,
+             color: Colors.white
+             ),
             ),
-           
-            
-            Icon(Icons.more_vert, color:Colors.white),
-            
-            //),
-            
+
+           // popup button
+
+           PopupMenuButton(
+            onSelected: (selected)  // routing to next fron popup options
+            [
+
+            ],
+            elevation: 10,
+              padding: EdgeInsets.symmetric(
+                vertical: 20,
+                ),
+                iconSize: 28,
+                iconColor: Colors.white,
+                
+                itemBuilder: (context)=>[
+                  // popup title 1
+                   PopupMenuItem(
+                    value: 1,
+                     child: Text(
+                      " New Group",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+                
+                // popup title 2
+
+                PopupMenuItem(
+                    value: 2,
+                    child: Text(
+                      " New broadcast",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+
+                 // popup title 3
+                
+                PopupMenuItem(
+                    value: 3,
+                    child: Text(
+                      " Linked devices",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+ 
+                // popup title 4
+
+                PopupMenuItem(
+                    value: 4,
+                    child: Text(
+                      " Starred messages",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+
+                 // popup title 5
+
+                 PopupMenuItem(
+                    value: 5,
+                    child: Text(
+                      " Payments",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+
+                // popup title 6
+                PopupMenuItem(
+                    value: 6,
+                    child: Text(
+                      " Settings",
+                      style: TextStyle(
+                        fontSize: 17,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ),
+               ],
+                ),
+
             SizedBox(
               width: 5,
             ),
