@@ -45,20 +45,24 @@ class _StateScreenState extends State<StateScreen> {
             SizedBox(
               width: 10,
             ),
-            
+
+           
             Icon(Icons.chat, color: Colors.white),
             SizedBox(
               width: 10,
             ),
-
-            Icon(Icons.more_vert, 
-            color:Colors.white),
-
+           
+            
+            Icon(Icons.more_vert, color:Colors.white),
+            
+            //),
+            
             SizedBox(
               width: 5,
             ),
-            
-          ],
+        
+      ],
+      
           backgroundColor: ColorConstants.primarygreen,
           bottom: TabBar(
               dividerHeight: 0,
