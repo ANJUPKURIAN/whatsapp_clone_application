@@ -22,6 +22,11 @@ class CustomChatCard extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+      //InkWell(
+       // onTap: (){
+         // Navigator.pushNamed(context,"chatpage");
+       // },
+      //),
           Row(
             children: [
               CircleAvatar(

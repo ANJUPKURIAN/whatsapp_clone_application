@@ -10,6 +10,7 @@ class ChatTabs extends StatelessWidget {
     return ListView.separated(
       //itemCount:6,
       padding: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+      
         itemBuilder: (context, index) => CustomChatCard
         (
         userName: DummyDb.chatList[index]['userName'],

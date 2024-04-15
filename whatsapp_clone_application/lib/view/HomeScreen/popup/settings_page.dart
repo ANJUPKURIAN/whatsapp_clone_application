@@ -240,6 +240,16 @@ class SettingsPage extends StatelessWidget {
                   ),
                   ),
           ),
+          Padding(
+            padding: EdgeInsets.symmetric(vertical:60),
+            child:Column(
+              children:[
+              Text("from",style:TextStyle(fontSize: 15),),
+              Text("Facebook",style:TextStyle(fontSize: 18,fontWeight: FontWeight.bold),),
+
+              ],
+            ),
+          ),
         ],
           ),
         )
