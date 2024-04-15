@@ -19,5 +19,6 @@ class ImageConstants{
 
   static const String  pexelImage2Png ="assets/image/pexel_image2.png";
   static const String  pexelImage3Png ="assets/image/pexel_image3.png";
-
+  static const String     newImagePng = "assets/image/newimage.png";
 }
+  

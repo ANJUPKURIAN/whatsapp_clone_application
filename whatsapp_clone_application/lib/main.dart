@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:whatsapp_clone_application/view/HomeScreen/popup/settings_page.dart';
+import 'package:whatsapp_clone_application/view/HomeScreen/state_screen.dart';
 import 'package:whatsapp_clone_application/view/splash_screen.dart';
 
 
@@ -15,6 +17,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
      debugShowCheckedModeBanner: false,
      home: SplashScreen(),
+
+      theme: ThemeData(
+      primarySwatch:Colors.grey,
+     ),
+
+      initialRoute: '/',
+      routes: {
+        '/ ':(context)=>StateScreen(),
+       'SettingsPage' :(context) =>SettingsPage(),
+      },
     );
   }
 }

@@ -84,10 +84,14 @@ class _StateScreenState extends State<StateScreen> {
            // popup button
 
            PopupMenuButton(
-            onSelected: (selected)  // routing to next fron popup options
-            [
-
-            ],
+            onSelected: (selected)  // routing to next page from popup options
+            {
+              // if someone click on value number 5 means 'click on settings'.
+              if(selected == 6)
+              {
+                  Navigator.pushNamed(context, "SettingsPage");
+              }
+            },
             elevation: 10,
               padding: EdgeInsets.symmetric(
                 vertical: 20,
